@@ -29,7 +29,7 @@
 | Framework | Spring Legacy (MVC), MyBatis |
 | DB | Oracle 11g |
 | Frontend | HTML, CSS, JavaScript, JSTL |
-| API | Kakao Map API, DAUM 주소 검색 API |
+| API | Kakao Map API, DAUM 주소 검색 API, PortOne API |
 | IDE | STS3, SQL Developer |
 | 협업 도구 | ERDCloud, Figma, GitHub |
 
