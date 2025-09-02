@@ -1,0 +1,72 @@
+/* ===== 사이드바 영역 ===== */
+.sidebar {
+	width: 260px;
+	background-color: #f0f8ff;
+	padding: 30px 16px; /* 좌우 padding 적절히 유지 */
+	border-right: 1px solid #dbeaff;
+	box-sizing: border-box;
+	position: relative; /* 위치 기준 잡아주고 */
+	left: 40px; /* 왼쪽에서 40px 떨어뜨림 */
+}
+
+.sidebar h1 {
+	font-size: 22px;
+	color: #111;
+	margin-bottom: 30px;
+}
+
+.sidebar h3 {
+	font-size: 16px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar ul li {
+	margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+	display: flex;
+	align-items: center;
+	padding: 8px 12px;
+	border-radius: 8px;
+	text-decoration: none;
+	color: #003366;
+	font-size: 14px;
+	transition: background-color 0.2s ease;
+}
+
+.sidebar ul li a .emoji {
+	margin-right: 6px;
+	font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+	background-color: #d8ebff;
+	color: #0066cc;
+}
+
+/* 드롭다운 서브메뉴 */
+.sidebar ul li .submenu {
+	display: none;
+	list-style: none;
+	padding-left: 16px;
+	margin-top: 6px;
+}
+
+.sidebar ul li:hover>.submenu {
+	display: block;
+}
+
+.sidebar ul li .submenu li a {
+	font-size: 13px;
+	padding: 4px 0;
+	color: #555;
+}

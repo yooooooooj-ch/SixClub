@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+	<!-- Root Context: defines shared resources visible to all other web components -->
+
+	<!-- 데이터베이스 연결 jsp에서 dbConn.java안에 con 객체 만들고 드라이브로딩을 위해 코딩하던 것을 myBatis는 
+		여기에 만드는 것 property=set인 것 이 부분은 복붙해서 사용하면됨 -->
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url"
+			value="jdbc:oracle:thin:@127.0.0.1:1521:xe" />
+		<property name="username" value="sixclub" />
+		<property name="password" value="1234" />
+	</bean>
+
+
+	<!-- SqlSessionFactory -->
+	<!-- ref : 객체를 가져갈때 쓰는것 (dataSource를 전달) ref="dataSource" myBatis가 dataSource를 
+		통해서 db와 연결 -->
+	<!-- sqlSessionFactory : myBatis 주요 객체 -->
+	<bean id="sqlSessionFactory"
+		class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation"
+			value="classpath:/mybatis-config.xml" />
+		<property name="mapperLocations"
+			value="classpath:/mapper/*.xml" />
+
+		<!-- mybatis는 2개 xml : config.xml / mapper.xml -->
+		<!-- resources 방 아래가 classpath:/ configLocation : config.xml - myBatis 
+			환경 설정 파일(src/main/resources) mapperLocations : mapper.xml - 매퍼파일인 어디에 넣을까 
+			(src/main/resources/mapper/*.xml) -->
+	</bean>
+
+
+	<!-- SqlSessionTemplate: spring-mybatis연동 sqlsession(myBatis에 많이 쓰이는 객체 
+		이름)생성에 관여 -->
+
+	<bean id="sqlSession"
+		class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg name="sqlSessionFactory"
+			ref="sqlSessionFactory" />
+	</bean>
+
+	<!-- mapper interface: mapping 파일의 sql call 을 위한 interface 즉, mapping 파일의 
+		sql을 java interface로 호출하게 해줌(cf.getMapper()) -->
+
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage"
+			value="com.mycom.sixclub.service.dao" />
+		<!-- 이 패키지 아래 모든 interface가 mapper interface로 인식 ArrayList <SawonVO> getAllSawon(); -->
+	</bean>
+
+	<!-- 입금 -> 수근 , 에러가 발생 입금X -> 수금X -->
+	<!-- DataSourceTransactionManager : 주로 jdbc나 mybatis로 db에 접근시 사용 -->
+
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<tx:annotation-driven
+		transaction-manager="transactionManager" />
+	<!-- 이것 때문에 @Transactional을 사용시 트랜잭션 자동 시작 RuntimeExcepton 또는 Error 발생시 
+		자동으로 콜백 됨 -->
+
+	<!-- 메일전송용 아이디 비번 설정 -->
+	<bean id="mailSender"
+		class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.naver.com" />
+		<property name="port" value="587" />
+		<property name="username" value="six_club@naver.com" />
+		<property name="password" value="2ZLGVEKXYRCT" />
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.transport.protocol">smtp</prop>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+				<prop key="mail.debug">true</prop>
+			</props>
+		</property>
+	</bean>
+</beans>
