@@ -108,7 +108,7 @@ Q&A 게시판, 마이페이지, 루틴 추천 등 다양한 기능을 통합하�
 
 ## 🔗 관련 자료
 
-- 🗂️ [ERD 보기](https://drive.google.com/file/d/1n9HLfJO5Wy249rfhEKLDPgXreGYw8PHe/view?usp=sharing)  
+- 📽️ [ERD 보기](https://drive.google.com/file/d/1n9HLfJO5Wy249rfhEKLDPgXreGYw8PHe/view?usp=sharing)  
 - 📊 [발표 자료(PPT)](https://docs.google.com/presentation/d/1vfPrJWHc8aXNnSzVaXhsYdm67C1KBYMj/edit?usp=sharing&ouid=106436189513240672230&rtpof=true&sd=true)  
 - ▶️ [시연 영상](https://drive.google.com/file/d/19kCE1w9HylECoXPGQJjLQpq3XAsk71DK/view?usp=sharing)
 
