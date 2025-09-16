@@ -3,10 +3,25 @@
 사용자의 목표와 신체 정보에 기반해 맞춤형 운동 루틴과 근처 헬스장을 추천해주는 **Spring 기반 웹 서비스**입니다.  
 카카오맵 API를 활용한 위치 기반 검색, 운동 루틴 추천 로직, 커뮤니티 기능(Q&A)을 통합한 프로젝트입니다.
 
-<img width="845" height="912" alt="image" src="https://github.com/user-attachments/assets/b3b00f24-9b83-421d-8a23-9c40d5bef91f" />
-<img width="551" height="750" alt="image" src="https://github.com/user-attachments/assets/a32ec5ef-5d97-4559-874f-f159ee0c4a26" />
+<details>
+<summary><strong>📸 전체 화면 미리보기</strong> (클릭하여 보기)</summary>
 
+| 구분 | 화면 | 미리보기 |
+|------|------|----------|
+| 공통 | 메인 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/b3b00f24-9b83-421d-8a23-9c40d5bef91f" /> |
+| 공통 | 로그인 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/19eae8ee-7a7c-42da-8b90-a21ad808114e" /> |
+| 공통 | Q&A | <img height="300" alt="image" src="https://github.com/user-attachments/assets/c033edba-d801-4125-9a00-f102f8b92083" /> <img height="300" alt="image" src="https://github.com/user-attachments/assets/4a935887-c5d8-45bb-9bdc-eee9c04270e8" /> |
+| 사용자 | 간편 계산기 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/cccfe8b7-d7b9-46f4-88f8-fb447d977b12" /> |
+| 사용자 | 구독관리 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/eeaa5495-4240-43fc-b842-6ff69952ec39" /> <img height="300" alt="image" src="https://github.com/user-attachments/assets/20ee7e84-4fce-4f02-8113-648dcc4d2c3a" /> |
+| 사용자 | 운동 하러가기 |<img height="300" alt="image" src="https://github.com/user-attachments/assets/fd7d7de1-41de-4573-8522-141c606876ad" /> <img height="300" alt="image" src="https://github.com/user-attachments/assets/162891c2-4b54-4afd-b04e-a06e41f3bf21" /><br> <img height="300" alt="image" src="https://github.com/user-attachments/assets/f1787689-69b5-4a2a-841e-61e3ef14d509" /> |
+| 사용자 | 운동 히스토리 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/0cee335b-b875-4679-b6f5-5fa73c8d7784" /> <img height="300" alt="image" src="https://github.com/user-attachments/assets/f20bb99b-d0ea-4143-8a78-bb71b26d2198" /> |
+| 사용자 | 근처 헬스장 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/a0ec1a10-2b4f-4b28-95e2-5f20ae9d0778" /> |
+| 사용자 | 운동 장비 추천 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/36b718f9-bee9-4872-8b03-a545a99539f6" /> |
+| 관리자 | 관리자 메인 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/9bb3e41d-1534-441f-8ab5-1e5c50723495" /> |
+| 관리자 | 회원 목록 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/65b37ed7-f6a3-4a36-9411-4f79c32633e2" /> |
+| 관리자 | 통계 관리 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/9f1c802e-2364-426c-a0ea-8aad497e0b40" /> |
 
+</details>
 
 ---
 
@@ -20,7 +35,7 @@
 
 ## 💡 기획 배경
 
-헬스 초보자들에게는 ‘어떤 운동을 어떻게 해야 할지’에 대한 정보 부족이 큰 장벽입니다.  
+헬스 초보자들에게는 **어떤 운동을 어떻게 해야 할지** 모른다는 어려움을 겪습니다.  
 이 서비스를 통해 사용자의 목표(BULK, 다이어트 등)에 따라 운동 루틴을 추천하고,  
 **헬스장 정보 + 루틴 + 커뮤니티**까지 제공하는 종합 운동 가이드를 구현하고자 했습니다.
 
@@ -44,38 +59,39 @@
 
 ### ✅ 사용자 기능
 - 나의 목표에 따른 루틴 추천 (다이어트, 벌크업 등)
-- 위치 기반 헬스장 검색 (카카오맵 연동)
-- Q&A 게시판 (비밀글 포함)
-- 마이페이지에서 내 활동 내역 확인
+- 위치 기반 헬스장 검색 (카카오맵 API 연동)
+- Q&A 게시판 (비밀글 지)
+- 운동 기록 확인 및 히스토리 저장
+- BMI, 기초대사량, 심박수 등 간편 계산기
 
 ### ✅ 관리자 기능
-- 헬스장 정보 등록 및 관리
-- 루틴 종류 및 운동법 수정
-- 게시판 모니터링
+- 헬스장/루틴 정보 등록 및 관리
+- 서비스 이용 통계 확인
+- 게시판 모니터링 및 회원 관리
 
 ---
 
 ## 📌 맡은 역할 상세
-- **📅 프로젝트 총괄**
-  - 전체 일정 수립
-  - 팀원별 기능 분배 및 주간 회의 주도
-  - 실시간 진척도 점검 및 일정 조정
-  - 팀원들의 코드를 수작업으로 병합하며 충돌 해결
+### 📅 프로젝트 총괄
+- 전체 일정 수립
+- 팀원별 기능 분배 및 주간 회의 주도
+- 실시간 진척도 점검 및 일정 조정
+- 팀원들의 코드를 수작업으로 병합하며 충돌 해결
 
-- 🧭 **카카오맵 API 연동 (기여도 100%)**
-  - 사용자 위치 기반으로 반경 내 헬스장 출력
-  - 검색 및 마커 클릭 시 상세 정보 팝업 구현
+### 🧭 카카오맵 API 연동 (기여도 100%)
+- 사용자 위치 기반으로 반경 내 헬스장 출력
+- 검색 및 마커 클릭 시 상세 정보 팝업 구현
 
-- 🧩 **Q&A 게시판 (기여도 100%)**
-  - 글쓰기, 댓글, 비밀글 처리, CRUD 기능 개발
-  - 페이징 처리 및 검색 기능 추가
+### 🧩 Q&A 게시판 (기여도 100%)
+- 글쓰기, 댓글, 비밀글 처리, CRUD 기능 개발
+- 페이징 처리 및 검색 기능 추가
 
-- 📁 **마이페이지 계산기 기능 (기여도 67%)**
-  - BMI, 목표심박수, 기초대사량 계산기 개발
+### 📁 마이페이지 계산기 기능 (기여도 67%)
+- BMI, 목표심박수, 기초대사량 계산기 개발
 
-- 🗂️ **DB 모델링 및 백엔드 연동 (기여도 80%)**
-  - MyBatis를 활용한 SQL 매핑 및 쿼리 튜닝
-  - Oracle 기반 다중 테이블 관계 설정
+### 🗂️ DB 모델링 및 백엔드 연동 (기여도 80%)
+- MyBatis를 활용한 SQL 매핑 및 쿼리 튜닝
+- Oracle 기반 다중 테이블 관계 설정
 
 ---
 
