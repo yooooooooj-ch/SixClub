@@ -47,7 +47,7 @@
 |------|------|
 | Language | Java |
 | Backend | Spring Legacy (MVC), MyBatis |
-| DB | Oracle 11g |
+| DB | Oracle 18c |
 | Frontend | HTML, CSS, JavaScript, JSTL |
 | API | Kakao Map, DAUM 주소 검색, PortOne |
 | IDE | STS3, SQL Developer |
