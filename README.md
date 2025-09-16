@@ -46,12 +46,12 @@
 | 구분 | 기술 |
 |------|------|
 | Language | Java |
-| Framework | Spring Legacy (MVC), MyBatis |
+| Backend | Spring Legacy (MVC), MyBatis |
 | DB | Oracle 11g |
 | Frontend | HTML, CSS, JavaScript, JSTL |
-| API | Kakao Map API, DAUM 주소 검색 API, PortOne API |
+| API | Kakao Map, DAUM 주소 검색, PortOne |
 | IDE | STS3, SQL Developer |
-| 협업 도구 | ERDCloud, Figma, GitHub |
+| 협업 도구 | ERDCloud, Figma |
 
 ---
 
