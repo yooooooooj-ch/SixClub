@@ -3,26 +3,6 @@
 사용자의 목표와 신체 정보에 기반해 맞춤형 운동 루틴과 근처 헬스장을 추천해주는 **Spring 기반 웹 서비스**입니다.  
 카카오맵 API를 활용한 위치 기반 검색, 운동 루틴 추천 로직, 커뮤니티 기능(Q&A)을 통합한 프로젝트입니다.
 
-<details>
-<summary><strong>📸 전체 화면 미리보기</strong> (클릭하여 보기)</summary>
-
-| 구분 | 화면 | 미리보기 |
-|------|------|----------|
-| 공통 | 메인 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/b3b00f24-9b83-421d-8a23-9c40d5bef91f" /> |
-| 공통 | 로그인 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/19eae8ee-7a7c-42da-8b90-a21ad808114e" /> |
-| 공통 | Q&A | <img height="300" alt="image" src="https://github.com/user-attachments/assets/c033edba-d801-4125-9a00-f102f8b92083" /> <img height="300" alt="image" src="https://github.com/user-attachments/assets/4a935887-c5d8-45bb-9bdc-eee9c04270e8" /> |
-| 사용자 | 간편 계산기 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/cccfe8b7-d7b9-46f4-88f8-fb447d977b12" /> |
-| 사용자 | 구독관리 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/eeaa5495-4240-43fc-b842-6ff69952ec39" /> <img height="300" alt="image" src="https://github.com/user-attachments/assets/20ee7e84-4fce-4f02-8113-648dcc4d2c3a" /> |
-| 사용자 | 운동 하러가기 |<img height="300" alt="image" src="https://github.com/user-attachments/assets/fd7d7de1-41de-4573-8522-141c606876ad" /> <img height="300" alt="image" src="https://github.com/user-attachments/assets/162891c2-4b54-4afd-b04e-a06e41f3bf21" /><br> <img height="300" alt="image" src="https://github.com/user-attachments/assets/f1787689-69b5-4a2a-841e-61e3ef14d509" /> |
-| 사용자 | 운동 히스토리 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/0cee335b-b875-4679-b6f5-5fa73c8d7784" /> <img height="300" alt="image" src="https://github.com/user-attachments/assets/f20bb99b-d0ea-4143-8a78-bb71b26d2198" /> |
-| 사용자 | 근처 헬스장 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/a0ec1a10-2b4f-4b28-95e2-5f20ae9d0778" /> |
-| 사용자 | 운동 장비 추천 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/36b718f9-bee9-4872-8b03-a545a99539f6" /> |
-| 관리자 | 관리자 메인 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/9bb3e41d-1534-441f-8ab5-1e5c50723495" /> |
-| 관리자 | 회원 목록 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/65b37ed7-f6a3-4a36-9411-4f79c32633e2" /> |
-| 관리자 | 통계 관리 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/9f1c802e-2364-426c-a0ea-8aad497e0b40" /> |
-
-</details>
-
 ---
 
 ## 📅 개발 기간
@@ -56,6 +36,27 @@
 ---
 
 ## 🧩 주요 기능
+
+<details>
+<summary><strong>📸 전체 화면 미리보기</strong> (클릭하여 보기)</summary>
+
+| 구분 | 화면 | 미리보기 |
+|------|------|----------|
+| 공통 | 메인 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/b3b00f24-9b83-421d-8a23-9c40d5bef91f" /> |
+| 공통 | 로그인 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/19eae8ee-7a7c-42da-8b90-a21ad808114e" /> |
+| 공통 | Q&A | <img height="300" alt="image" src="https://github.com/user-attachments/assets/c033edba-d801-4125-9a00-f102f8b92083" /> <img height="300" alt="image" src="https://github.com/user-attachments/assets/4a935887-c5d8-45bb-9bdc-eee9c04270e8" /> |
+| 사용자 | 간편 계산기 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/cccfe8b7-d7b9-46f4-88f8-fb447d977b12" /> |
+| 사용자 | 구독관리 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/eeaa5495-4240-43fc-b842-6ff69952ec39" /> <img height="300" alt="image" src="https://github.com/user-attachments/assets/20ee7e84-4fce-4f02-8113-648dcc4d2c3a" /> |
+| 사용자 | 운동 하러가기 |<img height="300" alt="image" src="https://github.com/user-attachments/assets/fd7d7de1-41de-4573-8522-141c606876ad" /> <img height="300" alt="image" src="https://github.com/user-attachments/assets/162891c2-4b54-4afd-b04e-a06e41f3bf21" /><br> <img height="300" alt="image" src="https://github.com/user-attachments/assets/f1787689-69b5-4a2a-841e-61e3ef14d509" /> |
+| 사용자 | 운동 히스토리 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/0cee335b-b875-4679-b6f5-5fa73c8d7784" /> <img height="300" alt="image" src="https://github.com/user-attachments/assets/f20bb99b-d0ea-4143-8a78-bb71b26d2198" /> |
+| 사용자 | 근처 헬스장 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/a0ec1a10-2b4f-4b28-95e2-5f20ae9d0778" /> |
+| 사용자 | 운동 장비 추천 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/36b718f9-bee9-4872-8b03-a545a99539f6" /> |
+| 관리자 | 관리자 메인 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/9bb3e41d-1534-441f-8ab5-1e5c50723495" /> |
+| 관리자 | 회원 목록 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/65b37ed7-f6a3-4a36-9411-4f79c32633e2" /> |
+| 관리자 | 통계 관리 | <img height="300" alt="image" src="https://github.com/user-attachments/assets/9f1c802e-2364-426c-a0ea-8aad497e0b40" /> |
+
+</details>
+
 
 ### ✅ 사용자 기능
 - 나의 목표에 따른 루틴 추천 (다이어트, 벌크업 등)
